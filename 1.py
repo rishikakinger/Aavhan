@@ -54,10 +54,10 @@ while True:
             print(text)
             time.sleep(3)
             if text:
-                if text == 'launch':
+                if text == 'launch' || text == 'start':
                     arm_takeoff(10)
                     time.sleep(10)
-                elif text == 'land':
+                elif text == 'land' || text == 'stop':
                     print("ok landing")
                     vehicle.mode=VehicleMode('RTL')
                     time.sleep(10)
